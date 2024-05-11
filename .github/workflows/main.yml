@@ -9,10 +9,10 @@ jobs:
   - uses: actions/checkout@v1
   - name: Hello world
     run: echo Hello world
-  - name: index.html content
-    run: cat index.html
-  - name: courses.html content
-    run: cat courses.html
+  - name: print html content
+    run: 
+     cat index.html
+     cat courses.html
   
     
   
