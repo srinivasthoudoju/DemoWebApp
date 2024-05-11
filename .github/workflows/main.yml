@@ -11,6 +11,8 @@ jobs:
     run: echo Hello world
   - name: index.html content
     run: cat index.html
+  - name: courses.html content
+    run: cat courses.html
   
     
   
