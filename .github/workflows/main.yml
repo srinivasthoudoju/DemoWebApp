@@ -1,6 +1,6 @@
 name: A workflow for my demo website
 on:
- push
+ workflow_dispatch
 jobs:
  build-job:
   name: Hello world action
@@ -10,7 +10,7 @@ jobs:
   - name: Hello world
     run: echo Hello world
   - name: print html content
-    run: 
+    run: |
      cat index.html
      cat courses.html
   
