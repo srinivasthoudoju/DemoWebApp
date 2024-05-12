@@ -1,6 +1,6 @@
 name: A workflow for my own website
 on:
- workflow_call
+ push
 jobs:
  build-job:
   name: Printing html content
