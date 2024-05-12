@@ -12,6 +12,6 @@ jobs:
    - name: Printing html content
      run: |
       cat index.html
-      cat: courses.html
+      cat courses.html
   
   
