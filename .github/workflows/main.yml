@@ -10,8 +10,8 @@ jobs:
    - name: echo Hello World
      run: echo Hello World
    - name: Printing html content
-     run: cat index.html
-   - name: Printing courses.html
-     run: cat courses.html
+     run: |
+      cat index.html
+      cat: courses.html
   
   
