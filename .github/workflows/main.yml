@@ -1,6 +1,10 @@
 name: A workflow for my own website
 on:
  push
+  paths:
+   '**'
+  - '!.github/**'
+  
 jobs:
  build-job:
   name: Printing html content
