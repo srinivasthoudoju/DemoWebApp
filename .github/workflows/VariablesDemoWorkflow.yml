@@ -1,12 +1,13 @@
 name: variablesDemoWorkflow
 on:
-  workflow_dispatch:
+  push:
+env:
+ DAY_OF_WEEK: Monday
 
 jobs:
   example-job:
     runs-on: ubuntu-latest
     env:
-      DAY_OF_WEEK: Monday
       Greeting: Hello
     steps:
       - name: Print value of variable
@@ -29,3 +30,7 @@ jobs:
       - name: Print the secret value
         run: |
          echo "The value of secrete is: ${{secrets.REPOSECRET}}"
+
+      - name: Print who is github actor
+        run: |
+         echo "The name of GitHub Actor Guy: ${{github.actor}}"
