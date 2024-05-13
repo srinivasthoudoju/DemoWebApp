@@ -1,0 +1,35 @@
+name: variablesDemoWorkflow
+on:
+ workflow_dispatch:
+
+env: 
+ DAY_OF_WEEK: Monday
+
+jobs:
+ example-job:
+  runs-on: ubuntu-latest
+  env:
+   Greeting: Hello
+  steps:
+   - name: Print value of variable
+     run: |
+      echo "Value of Greeting is: {{ env.Greeting}}"
+      echo "Value of Greeting is: $Greeting"
+      echo "Value of Repo Variables is: {{vars.REPOVARIABLE}}
+
+      env:
+       FirstName: Srinivas
+
+   - name: "Say Hello, its Monday"
+     if:${{env.DAY_OF_WEEK == 'Monday'}}
+     run: echo "${{env.Greeting}}${{env.FirstName}}.Today is ${{env.DAY_OF_WEEK}}!"
+
+    - name: Print the variable value
+      run: |
+       echo "The value of variable repo is:${{vars.REPOVARIABLE}}
+     
+      
+      
+   
+   
+  
