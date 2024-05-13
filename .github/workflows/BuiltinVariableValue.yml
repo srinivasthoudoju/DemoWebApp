@@ -19,4 +19,7 @@ jobs:
       echo "The vlaue of branch is: ${{github.ref}}"
       echo "The value of repository is: ${{github.repository}}"
       echo "The value of job status is: ${{job.status}}"
-      ls ${{github.workspace}}
+
+   - name: Printing the Githubworkspace list
+     run: |
+        ls ${{github.workspace}}
