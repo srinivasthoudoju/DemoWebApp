@@ -25,3 +25,7 @@ jobs:
       - name: "Print the variable value"
         run: |
           echo "The value of variable repo is: ${{ vars.REPOVARIABLE }}"
+
+      - name: Print the secret value
+        run: |
+         echo "The value of secrete is: ${{secret.REPOSECRET}}
