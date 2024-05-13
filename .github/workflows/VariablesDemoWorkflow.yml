@@ -28,4 +28,4 @@ jobs:
 
       - name: Print the secret value
         run: |
-         echo "The value of secrete is: ${{secret.REPOSECRET}}
+         echo "The value of secrete is: ${{secrets.REPOSECRET}}
