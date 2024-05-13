@@ -15,7 +15,7 @@ jobs:
      run: |
       echo "Value of Greeting is: ${{ env.Greeting}}"
       echo "Value of Greeting is: $Greeting"
-      echo "Value of Repo Variables is: ${{vars.REPOVARIABLE}}
+      echo "Value of Repo Variables is: ${{vars.REPOVARIABLE}}"
 
       env:
        FirstName: Srinivas
