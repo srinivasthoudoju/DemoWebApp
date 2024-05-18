@@ -25,7 +25,7 @@ jobs:
 
    - name: Display the content of index.html
      run: |
-       cat index.html.html
+       cat index.html
 
  display2:
   runs-on: ubuntu-latest
