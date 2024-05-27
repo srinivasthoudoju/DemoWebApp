@@ -1,6 +1,6 @@
 name: testing purpose
 on:
- workflow_dispatch:
+ push:
 
 jobs:
  build-job:
