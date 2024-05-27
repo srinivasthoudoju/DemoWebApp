@@ -1,5 +1,6 @@
 name: outputs_demo
 
+
 on:
  workflow_dispatch:
 
@@ -11,10 +12,12 @@ jobs:
    output1: ${{ steps.step1.outputs.test }}
    output2: ${{ steps.step2.outputs.test }}
 
-  steps:
-   - id: step1
-     run: echo "::set-output name=test::Hello"
+        steps:
+          - name: outputs_demo
+          - id: step1
+            run: echo "::set-output name=test::Hello"
+          - id: step2
+            run: echo "::set-output name=test::World"  
+            
 
-   - id: step2
-     run: echo "::set-output name=test::World"
-   
+          
