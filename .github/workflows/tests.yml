@@ -16,6 +16,13 @@ jobs:
 
    - name: Helloworld
      run: echo "This workflow is created just for testing purpose"
-      
+
+ Powershell-Execution:
+  runs-on: ububtu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: Powershell script  Powershell-Execution
+     run: Powershell -File .\calculateTwoNumbers.ps1
+
  
    
