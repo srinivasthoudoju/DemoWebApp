@@ -22,7 +22,7 @@ jobs:
   steps:
    - uses: actions/checkout@v4
    - name: Powershell script  Powershell-Execution
-     run: pwsh -File .\calculateTwoNumbers.ps1
+     run: pwsh -File ./calculateTwoNumbers.ps1
 
  
    
