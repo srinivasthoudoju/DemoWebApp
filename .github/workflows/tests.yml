@@ -13,5 +13,9 @@ jobs:
 
    - name: AWS CLI list
      run: aws --version
+
+   - name: Helloworld
+     run: echo "This workflow is created just for testing purpose.
+      
  
    
