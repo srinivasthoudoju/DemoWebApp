@@ -28,3 +28,5 @@ jobs:
       
       - name: Powershell script execution
         run: pwsh -File ./calculateTwoNumbers.ps1
+      - name: Printing Helloworld
+      - run: echo "Hello world"
