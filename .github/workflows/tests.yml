@@ -1,28 +1,28 @@
 name: testing purpose
 on:
- push:
+  push:
+   branches:
+    - my_first_branch
 
 jobs:
- build-job:
-  runs-on: ubuntu-latest
-  steps:
-   - uses: actions/checkout@v4
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-   - name: list the files
-     run: ls -a
+      - name: List the files
+        run: ls -a
 
-   - name: AWS CLI list
-     run: aws --version
+      - name: AWS CLI version
+        run: aws --version
 
-   - name: Helloworld
-     run: echo "This workflow is created just for testing purpose"
+      - name: Helloworld
+        run: echo "This workflow is created just for testing purpose"
 
- Powershell-Execution:
-  runs-on: ububtu-latest
-  steps:
-   - uses: actions/checkout@v4
-   - name: Powershell script
-     run: pwsh -File ./calculateTwoNumbers.ps1
-
- 
-   
+  Powershell-Execution:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Powershell script execution
+        run: pwsh -File ./calculateTwoNumbers.ps1
