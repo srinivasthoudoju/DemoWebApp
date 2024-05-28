@@ -2,7 +2,7 @@ name: testing purpose
 on:
   push:
    branches:
-    - my_first_branch
+    - main
    paths:
     - tests.yml
 
