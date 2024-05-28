@@ -2,7 +2,7 @@ name: testing purpose
 on:
   push:
    branches:
-    - main
+    - my_first_branch
 
 jobs:
   build-job:
