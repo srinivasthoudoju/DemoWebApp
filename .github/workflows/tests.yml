@@ -3,6 +3,8 @@ on:
   push:
    branches:
     - my_first_branch
+   paths:
+    - tests.yml
 
 jobs:
   build-job:
