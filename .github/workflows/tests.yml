@@ -21,7 +21,7 @@ jobs:
   runs-on: ububtu-latest
   steps:
    - uses: actions/checkout@v4
-   - name: Powershell script  Powershell-Execution
+   - name: Powershell script
      run: pwsh -File ./calculateTwoNumbers.ps1
 
  
