@@ -1,6 +1,6 @@
 name: variablesDemoWorkflow
 on:
-  workflow_dispatch:
+ workflow_dispatch:
 env:
  DAY_OF_WEEK: Monday
 
